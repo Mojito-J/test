@@ -1,0 +1,17 @@
+// Example 1 - Рефакторинг кода
+private enum Status {
+        ACTIVE,
+        INACTIVE,
+        DELETED;
+
+        public static Status getStatus(String name) {
+          return Status.valuesOf(name);
+        }
+}
+
+public static void main(String[] args) {
+        Status status1 = getStatus("ACTIVE");
+        Status status2 = getStatus("active");
+        Status status3 = getStatus("test");
+        System.out.println(status1.name());
+}

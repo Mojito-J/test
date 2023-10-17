@@ -1,0 +1,21 @@
+// Example 2
+public class Result {
+    private int active;   // ACTIVE
+    private int inactive; // INACTIVE
+    private int deleted;  // DELETED
+
+    // getters
+    // setters
+    // constructors
+
+    public static int getCountByStatus(Status status, Result result) {
+
+        // ??? реализовать метод получиние значений по статусу (status) из объекта result соответсвующего поля
+
+    }
+
+    public static void main(String[] args) {
+      Result r = new Result(4,7,1);
+      int value = getCountByStatus(Status.DELETED, r); // =1
+      int value = getCountByStatus(Status.ACTIVE, r); // =4
+    }
